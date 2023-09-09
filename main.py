@@ -26,10 +26,8 @@ async def on_ready():
 #gives commands and how to use them
 @client.command()
 async def hello(ctx):
-    try:
-        await ctx.send("```\nHello, I am SpellChecker\nMy command is spellcheck\nFormat for spellcheck is:\n?spellcheck \"<TEXT GOES HERE>\"\n```")
-    except:
-        print("An exception occured")
+    await ctx.send("```\nHello, I am SpellChecker\nMy command is spellcheck\nFormat for spellcheck is:\n?spellcheck \"<TEXT GOES HERE>\"\n```")
+
 
 
 #given text, it will check the spelling
