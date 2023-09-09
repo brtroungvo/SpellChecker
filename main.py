@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 
 #import Bot Token
-from ______ import *
+from tokens import *
 
 
 intents = discord.Intents.all()
@@ -38,7 +38,7 @@ def checker(self, text):
 
 
 #token goes in parentheses - dont give away very important
-client.run()
+client.run(botToken)
 
 # to add to server https://discord.com/api/oauth2/authorize?client_id=1147985792661213185&permissions=8&scope=bot
 
