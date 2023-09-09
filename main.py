@@ -27,7 +27,7 @@ async def on_ready():
 @client.command()
 async def hello(ctx):
     try:
-        await ctx.send("```\nHello, I am SpellChecker. My prefix is ? and my commands are help and spellcheck.\nFormat for spellcheck is:\n?spellcheck \" \"\n```")
+        await ctx.send("```\nHello, I am SpellChecker\nMy command is spellcheck\nFormat for spellcheck is:\n?spellcheck \"<TEXT GOES HERE>\"\n```")
     except:
         print("An exception occured")
 
