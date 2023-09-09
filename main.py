@@ -1,10 +1,15 @@
 #import required dependities
+import os
 import discord
 from discord.ext import commands
 from autocorrect import Speller
+from dotenv import load_dotenv
 
-#import Bot Token
-from tokens import *
+# Overrides system variables with .env variables
+load_dotenv(override=True)
+
+#
+botToken = os.getenv("DISCORD_TOKEN")
 
 #instantiate Speller object
 text = Speller('en')
